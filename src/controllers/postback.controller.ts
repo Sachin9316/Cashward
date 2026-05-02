@@ -5,8 +5,9 @@ import Transaction from '../models/Transaction';
 /**
  * Generic Webhook / Postback handler for Offerwalls (CPALead, AdGem, etc.)
  * Offerwalls usually send a GET or POST request to this URL when a user completes a task.
- * Example URL configuration on the Offerwall dashboard:
- * https://your-backend.com/api/postbacks/generic?userId={subid}&reward={reward}&transId={tx_id}
+ * 
+ * Production URL for your dashboards:
+ * https://cashward-heoq.vercel.app/api/postbacks/generic?userId={subid}&reward={reward}&transId={tx_id}
  */
 export const handleGenericPostback = async (req: Request, res: Response) => {
   try {
