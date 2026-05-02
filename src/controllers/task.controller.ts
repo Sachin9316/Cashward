@@ -1,4 +1,4 @@
-import { Response } from 'express';
+import { Request, Response } from 'express';
 import Task from '../models/Task';
 import User from '../models/User';
 import Transaction from '../models/Transaction';
